@@ -43,6 +43,6 @@ def main() -> None:
                   "RF": [(10, 19), (56, 70), (1, 9), (-100, -12), (-11, 7)]}
     print(f"Le mse des différents modèles est: {compute_mse(model_dict)}")
 
-
+ 
 if __name__ == '__main__':
     main()
