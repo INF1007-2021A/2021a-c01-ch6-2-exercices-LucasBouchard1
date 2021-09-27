@@ -12,11 +12,11 @@ Traceback (most recent call last):
 AssertionError: Lists differ: [<generator object color_name_to_hex.<loca[103 chars]f90>] != [[('blue', '#0000FF'), ('red', '#FF0000'),[173 chars]A')]]
 
 First differing element 0:
-<generator object color_name_to_hex.<loca[27 chars]6eb0>
+<generator object color_name_to_hex.<loca[27 chars]9eb0>
 [('blue', '#0000FF'), ('red', '#FF0000'),[84 chars]FF')]
 
-- [<generator object color_name_to_hex.<locals>.<genexpr> at 0x7f9708486eb0>,
--  <generator object color_name_to_hex.<locals>.<genexpr> at 0x7f9708486f90>]
+- [<generator object color_name_to_hex.<locals>.<genexpr> at 0x7f1b420c9eb0>,
+-  <generator object color_name_to_hex.<locals>.<genexpr> at 0x7f1b420c9f90>]
 + [[('blue', '#0000FF'),
 +   ('red', '#FF0000'),
 +   ('green', '#008000'),
@@ -47,6 +47,6 @@ First extra element 9664:
 Diff is 86302 characters long. Set self.maxDiff to None to see it. : Mauvaise reponse
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.051s
+Ran 4 tests in 0.044s
 
 FAILED (failures=2)
