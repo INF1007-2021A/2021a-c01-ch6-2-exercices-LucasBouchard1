@@ -9,24 +9,42 @@ FAIL: test_color_name_to_hex (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 36, in test_color_name_to_hex
     self.assertEqual(
-AssertionError: Lists differ: [<generator object color_name_to_hex.<loca[103 chars]f90>] != [[('blue', '#0000FF'), ('red', '#FF0000'),[173 chars]A')]]
+AssertionError: Lists differ: [(('blue', '#0000FF'), ('red', '#FF0000'),[173 chars]A'))] != [[('blue', '#0000FF'), ('red', '#FF0000'),[173 chars]A')]]
 
 First differing element 0:
-<generator object color_name_to_hex.<loca[27 chars]9eb0>
+(('blue', '#0000FF'), ('red', '#FF0000'),[84 chars]FF'))
 [('blue', '#0000FF'), ('red', '#FF0000'),[84 chars]FF')]
 
-- [<generator object color_name_to_hex.<locals>.<genexpr> at 0x7f1b420c9eb0>,
--  <generator object color_name_to_hex.<locals>.<genexpr> at 0x7f1b420c9f90>]
+- [(('blue', '#0000FF'),
+?  ^
+
 + [[('blue', '#0000FF'),
-+   ('red', '#FF0000'),
-+   ('green', '#008000'),
-+   ('yellow', '#FFFF00'),
-+   ('black', '#000000'),
+?  ^
+
+    ('red', '#FF0000'),
+    ('green', '#008000'),
+    ('yellow', '#FFFF00'),
+    ('black', '#000000'),
+-   ('white', '#FFFFFF')),
+?                       ^
+
 +   ('white', '#FFFFFF')],
+?                       ^
+
+-  (('orange', '#FFA500'),
+?  ^
+
 +  [('orange', '#FFA500'),
-+   ('blue', '#0000FF'),
-+   ('red', '#FF0000'),
-+   ('brown', '#A52A2A')]] : Mauvaise reponse
+?  ^
+
+    ('blue', '#0000FF'),
+    ('red', '#FF0000'),
+-   ('brown', '#A52A2A'))]
+?                       -
+
++   ('brown', '#A52A2A')]]
+?                        +
+ : Mauvaise reponse
 
 ======================================================================
 FAIL: test_create_list (__main__.TestExercice)
