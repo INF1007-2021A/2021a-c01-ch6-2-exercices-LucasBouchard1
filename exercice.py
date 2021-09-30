@@ -15,11 +15,7 @@ def color_name_to_hex(colors: list) -> list:
 
 create_list = [x for x in range(10000) if not 15<x<350]
 
-
-def compute_mse(model_dict: dict) -> dict:
-    # TODO: Calculer l'erreur quadratique moyen pour chaque modèle. Retourner un dictionnaire contenant les MSE.
-    mse = lambda liste: sum([(x[0]-x[1])**2 for x in liste])/len(liste)
-    return {x:mse(y) for x,y in model_dict.items()}
+compute_mse = lambda model_dict: {model_name: sum([(value[0]-value[1])**2 for value in values])/len(values) for model_name, values in model_dict.items()}
 
 
 def main() -> None:
