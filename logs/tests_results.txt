@@ -1,70 +1,17 @@
-test_color_name_to_hex (__main__.TestExercice) ... FAIL
+test_color_name_to_hex (__main__.TestExercice) ... ok
 test_compute_mse (__main__.TestExercice) ... ok
-test_create_list (__main__.TestExercice) ... FAIL
+test_create_list (__main__.TestExercice) ... ERROR
 test_list_to_dict (__main__.TestExercice) ... ok
 
 ======================================================================
-FAIL: test_color_name_to_hex (__main__.TestExercice)
+ERROR: test_create_list (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 36, in test_color_name_to_hex
-    self.assertEqual(
-AssertionError: Lists differ: [(('blue', '#0000FF'), ('red', '#FF0000'),[173 chars]A'))] != [[('blue', '#0000FF'), ('red', '#FF0000'),[173 chars]A')]]
-
-First differing element 0:
-(('blue', '#0000FF'), ('red', '#FF0000'),[84 chars]FF'))
-[('blue', '#0000FF'), ('red', '#FF0000'),[84 chars]FF')]
-
-- [(('blue', '#0000FF'),
-?  ^
-
-+ [[('blue', '#0000FF'),
-?  ^
-
-    ('red', '#FF0000'),
-    ('green', '#008000'),
-    ('yellow', '#FFFF00'),
-    ('black', '#000000'),
--   ('white', '#FFFFFF')),
-?                       ^
-
-+   ('white', '#FFFFFF')],
-?                       ^
-
--  (('orange', '#FFA500'),
-?  ^
-
-+  [('orange', '#FFA500'),
-?  ^
-
-    ('blue', '#0000FF'),
-    ('red', '#FF0000'),
--   ('brown', '#A52A2A'))]
-?                       -
-
-+   ('brown', '#A52A2A')]]
-?                        +
- : Mauvaise reponse
-
-======================================================================
-FAIL: test_create_list (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 48, in test_create_list
-    self.assertListEqual(
-AssertionError: Lists differ: [0, 1[41 chars] 14, 15, 350, 351, 352, 353, 354, 355, 356, 35[57207 chars]9999] != [0, 1[41 chars] 14, 351, 352, 353, 354, 355, 356, 357, 358, 3[57198 chars]9999]
-
-First differing element 15:
-15
-351
-
-First list contains 2 additional elements.
-First extra element 9664:
-9998
-
-Diff is 86302 characters long. Set self.maxDiff to None to see it. : Mauvaise reponse
+  File "test_exercice.py", line 44, in test_create_list
+    output = exercice.create_list()
+TypeError: 'list' object is not callable
 
 ----------------------------------------------------------------------
-Ran 4 tests in 0.044s
+Ran 4 tests in 0.001s
 
-FAILED (failures=2)
+FAILED (errors=1)
